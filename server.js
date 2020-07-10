@@ -1,9 +1,12 @@
 const express=require('express');
+const connectDB=require('./config/db');
 
+
+connectDB();
 
 const app=express();
 
-app.get('/',(req,res)=>{res.send('API running')}) // requesting for homepage and responding as API running API is a already written code used as web service eg: google login , weather API
+app.get('/',(req,res)=>{res.send('API running')}) // requesting for homepage and responding as API running. API is a already written code used as web service eg: google login , weather API
 
 
 
